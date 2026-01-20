@@ -4,6 +4,7 @@ import { TabContext, TabList, TabPanel } from '@mui/lab';
 import { Header } from '../components/layout/AppBar';
 import { Sidebar } from '../components/layout/Drawer';
 import { ContainerWrapper } from '../components/layout/Container';
+import { FormsDemo } from '../components/showcase/FormsDemo';
 
 interface ShowcasePageProps {
   mode: 'light' | 'dark';
@@ -39,7 +40,7 @@ export const ShowcasePage: React.FC<ShowcasePageProps> = ({ mode, onThemeToggle 
                 <Tab label="Overlays" value="6" />
               </TabList>
             </Box>
-            <TabPanel value="1">Inputs Components</TabPanel>
+            <TabPanel value="1"><FormsDemo /></TabPanel>
             <TabPanel value="2">Data Components</TabPanel>
             <TabPanel value="3">Navigation Components</TabPanel>
             <TabPanel value="4">Feedback Components</TabPanel>
